@@ -6,7 +6,7 @@
       <p class="text-base text-white text-center">
         Training solutions designed for companies, agencies and organisations with 
         developers using or who are considering using the Vue.js framework</p>
-      <button class="bg-[#0BD88F] rounded-[10px] px-10 py-5 text-base font-medium">Talk to Sales</button>
+      <UiButton>Talk to Sales</UiButton>
     </div>
     <img :src=learners alt="group of learners"/>
   </div>

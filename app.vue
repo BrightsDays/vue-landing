@@ -4,5 +4,6 @@
     <AppPromo />
     <AppAbout />
     <AppStats />
+    <AppBundles />
   </div>
 </template>

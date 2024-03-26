@@ -3,10 +3,11 @@
     <span class="inline-block mb-[13px] bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-base text-transparent text-center font-medium uppercase">
       YOUR #1 SOURCE OF VUE.JS COURSES
     </span>
-    <h2 class="mb-8 font-bold text-[2.5rem]/[47.4px] text-white text-center">Full Stack 
-      <span class="bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-transparent">Vue Training</span> 
-      Solutions
-    </h2>
+    <UiHeading
+      main="Full Stack"
+      green="Vue Training"
+      second="Solutions"
+    />
     <div class="flex justify-between">
       <div
         v-for="item of stats"
