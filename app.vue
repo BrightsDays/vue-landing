@@ -1,5 +1,8 @@
 <template>
   <div class="bg-[#212435]">
-    <Header />
+    <AppHeader />
+    <AppPromo />
+    <AppAbout />
+    <AppStats />
   </div>
 </template>

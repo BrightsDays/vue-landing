@@ -1,0 +1,7 @@
+<template>
+  <div class="bg-gradient-to-b from-[#FFFFFF33] to-[#FFFFFF00] rounded-[30px] p-px">
+    <div class="flex flex-col items-center bg-[#2B2F44E5] rounded-[30px] p-6 gap-6">
+      <slot />
+    </div>
+  </div>
+</template>
