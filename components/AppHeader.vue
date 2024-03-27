@@ -1,9 +1,17 @@
 <template>
-  <div class="flex justify-start items-center gap-6 px-4 py-5">
+  <div class="flex justify-start items-center gap-6 px-4 md:px-12 py-5">
     <button>
       <img :src=burger />
     </button>
     <img :src=logo />
+    <div class="ml-auto hidden md:flex items-center gap-[30px]">
+      <a href="/" class="text-base text-white font-normal">
+        Log in
+      </a>
+      <UiButton transparent>
+        Sign up
+      </UiButton>
+    </div>
   </div>
 </template>
 
