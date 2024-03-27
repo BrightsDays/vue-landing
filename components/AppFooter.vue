@@ -8,7 +8,7 @@
       </span>
       <div class="flex flex-col gap-6 flex-shrink w-full items-center">
         <span class="text-[22px] text-[#737B98] font-medium uppercase">FOLLOW US IN SOCIAL MEDIA</span>
-        <div class="flex justify-between w-full">
+        <div class="flex justify-between w-full max-w-[470px]">
           <a
             v-for="item in socials"
             :key="`social_${item.title}`"
