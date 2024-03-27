@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center px-[15px] py-8 gap-12">
+  <div class="flex flex-col items-center py-8 gap-12">
     <div class="flex flex-col items-center gap-6">
       <h1 class="text-[2.5rem]/[47.4px] text-white text-center font-bold">Complete 
         <span class="text-[#0BD88F]">Vue.js training</span> solutions for companies</h1>

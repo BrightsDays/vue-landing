@@ -1,5 +1,5 @@
 <template>
-  <div class="px-[15px] pb-[120px]">
+  <div class="pb-[120px]">
     <UiHeading
       main="Discounted"
       green="Corporate Training"

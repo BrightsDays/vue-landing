@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col px-[15px] mb-[120px]">
+  <div class="flex flex-col mb-[120px]">
     <span class="inline-block mb-[13px] bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-base text-transparent text-center font-medium uppercase">
       YOUR #1 SOURCE OF VUE.JS COURSES
     </span>
