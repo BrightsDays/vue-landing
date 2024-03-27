@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-12">
+  <div class="flex flex-col gap-12 md:gap-16">
     <div class="flex flex-col gap-8 items-center">
       <img :src="logo" alt="Logo" />
       <span class="text-base text-white text-center">

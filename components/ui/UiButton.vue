@@ -7,7 +7,7 @@
   </button>
   <div
     v-else
-    class="bg-gradient-to-r from-[#0BD88F] to-[#00C2FF] p-[1px] rounded-[10px]"
+    class="bg-gradient-to-r from-[#0BD88F] to-[#00C2FF] p-[2px] rounded-[11px]"
   >
     <button
       class="bg-[#212435] rounded-[10px] px-10 py-5 text-base text-[#0BD88F] font-medium"
