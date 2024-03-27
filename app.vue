@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#212435] px-[15px] pb-[131px]">
+  <div class="bg-[#212435] px-[15px] md:px-[40px] pb-[131px]">
     <AppHeader />
     <AppPromo />
     <AppAbout />
