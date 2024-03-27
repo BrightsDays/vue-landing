@@ -1,5 +1,5 @@
 <template>
-  <div class="min-w-[345px]">
+  <div class="min-w-[345px] md:min-w-[570px]">
     <div class="flex gap-3 bg-gradient-to-r from-[#4F08E680] to-[#FF497580] px-4 py-6 rounded-t-[30px]">
       <img :src="date" alt="Date" />
       <span class="text-base text-white font-medium">December 14th - 11:00 AM (GMT-3)</span>

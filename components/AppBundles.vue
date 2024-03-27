@@ -1,11 +1,12 @@
 <template>
-  <div class="mb-[120px]">
+  <div class="mb-[120px] md:mb-[140px]">
     <UiHeading
       main="Discounted"
       green="Corporate Training"
       second="Bundles"
+      class="md:mb-[70px]"
     />
-    <div class="flex flex-col gap-6">
+    <div class="flex flex-col gap-6 md:px-6">
       <UiBundle
         v-for="item, key in bundles"
         :key="`bundle_${item.title}_${key}`"
