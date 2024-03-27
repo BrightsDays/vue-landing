@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col gap-8">
+    <div class="flex md:grid grid-cols-3 flex-col gap-8">
       <UiList
         v-for="item of links"
         :key="`list_${item.title}`"

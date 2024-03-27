@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col gap-5 items-center">
+  <div class="flex flex-col gap-5 items-center md:items-start">
     <span class="text-[22px] text-[#737B98] font-medium uppercase">
       {{ title }}
     </span>
-    <div class="flex flex-col gap-3.5 items-center">
+    <div class="flex flex-col gap-3.5 items-center md:items-start">
       <a
         v-for="item of list" 
         :key="`link_${item.text}`"
