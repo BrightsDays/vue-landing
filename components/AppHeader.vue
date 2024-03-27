@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-start items-center gap-6 px-6 py-5">
+  <div class="flex justify-start items-center gap-6 px-4 py-5">
     <button>
       <img :src=burger />
     </button>

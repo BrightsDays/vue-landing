@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-8 mb-[120px]">
+  <div class="mb-[120px]">
     <UiCard>
       <img :src=logo alt="logo" />
       <div class="flex flex-col gap-[15px]">

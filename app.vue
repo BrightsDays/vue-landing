@@ -6,5 +6,6 @@
     <AppStats />
     <AppBundles />
     <AppWorkshops />
+    <AppFooter />
   </div>
 </template>

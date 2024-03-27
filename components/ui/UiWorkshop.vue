@@ -2,7 +2,7 @@
   <div class="min-w-[345px]">
     <div class="flex gap-3 bg-gradient-to-r from-[#4F08E680] to-[#FF497580] px-4 py-6 rounded-t-[30px]">
       <img :src="date" alt="Date" />
-      <span class="text-base text-white">December 14th - 11:00 AM (GMT-3)</span>
+      <span class="text-base text-white font-medium">December 14th - 11:00 AM (GMT-3)</span>
     </div>
     <div class="flex flex-col gap-5 bg-[#2B2F44E5] px-4 py-9 rounded-b-[30px]">
       <div class="flex gap-9">
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="flex flex-col gap-3">
-        <span class="text-2xl text-white">Vue.js Fundamentals</span>
+        <span class="text-2xl text-white font-medium">Vue.js Fundamentals</span>
         <span class="text-sm text-[#737B98]">
           A progressive framework for building user interfaces. Unlike other monolithic 
           frameworks, Vue is designed from the ground up to be incrementally...
