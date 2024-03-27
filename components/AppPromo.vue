@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center mb-16 pt-8 gap-12">
+  <div class="flex flex-col items-center mb-16 md:mb-[6.3rem] pt-8 gap-12">
     <div class="flex flex-col items-center gap-6 md:gap-10">
       <h1 class="text-[2.5rem]/[47.4px] md:text-6xl text-white text-center font-bold">Complete 
         <span class="text-[#0BD88F]">Vue.js training</span> solutions for companies</h1>
