@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col mb-[120px]">
-    <span class="inline-block mb-[13px] bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-base text-transparent text-center font-medium uppercase">
+  <div class="flex flex-col mb-[120px] md:mb-[140px] md:px-[3.75rem]">
+    <span class="inline-block mb-[13px] bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-base md:text-2xl text-transparent text-center font-medium uppercase">
       YOUR #1 SOURCE OF VUE.JS COURSES
     </span>
     <UiHeading
@@ -8,14 +8,14 @@
       green="Vue Training"
       second="Solutions"
     />
-    <div class="flex justify-between">
+    <div class="flex justify-around">
       <div
         v-for="item of stats"
         :key="`stat_${item.title}`"
         class="flex flex-col items-center"
       >
         <span
-          class="bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-transparent text-[64px]/[75.84px] font-normal"
+          class="bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-transparent text-[64px]/[75.84px] md:text-8xl md:font-medium"
         >
           {{ item.value }}
         </span>
