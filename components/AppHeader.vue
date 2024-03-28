@@ -11,7 +11,7 @@
         v-for="item of menu"
         :key="`menu_${item.text}`"
         :href="item.url"
-        class="flex gap-0 text-base text-white font-normal"
+        class="flex gap-0 text-base text-white font-normal whitespace-nowrap"
       >
         {{ item.text }}
         <img v-if="item.submenu" :src="arrow" alt="Arrow" />
