@@ -1,16 +1,16 @@
 <template>
   <button
     v-if="!transparent"
-    class="bg-[#0BD88F] rounded-[10px] px-10 py-5 text-base text-black font-medium hover:bg-[#0bd890af] transition-all"
+    class="bg-green rounded-basic px-10 py-5 text-base text-black font-medium  hover:opacity-80 transition-all"
   >
     <slot />
   </button>
   <div
     v-else
-    class="bg-gradient-to-r from-[#0BD88F] to-[#00C2FF] p-[2px] rounded-[11px]"
+    class="bg-gradient-to-r from-green to-green_gradient p-0.5 rounded-outer"
   >
     <button
-      class="bg-[#212435] rounded-[10px] px-10 py-5 text-base text-[#0BD88F] font-medium hover:opacity-80 transition-all"
+      class="bg-main rounded-basic px-10 py-5 text-base text-green font-medium hover:opacity-80 transition-all"
     >
     <slot />
   </button>

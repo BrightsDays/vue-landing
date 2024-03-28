@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-start md:justify-between items-center px-4 md:px-2 xl:px-0 xl:mx-[-87px] py-5">
+  <div class="flex justify-start md:justify-between items-center px-4 md:px-2 xl:px-0 xl:mx-[-5.4rem] py-5">
     <div class="flex items-center gap-6">
       <button class="xl:hidden">
         <img :src=burger />
@@ -17,7 +17,7 @@
         <img v-if="item.submenu" :src="arrow" alt="Arrow" />
       </a>
     </div>
-    <div class="hidden md:flex items-center gap-[30px]">
+    <div class="hidden md:flex items-center gap-7">
       <a href="/" class="text-base text-white font-normal">
         Log in
       </a>

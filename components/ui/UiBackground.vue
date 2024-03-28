@@ -1,39 +1,31 @@
 <template>
-  <div v-if="position === 'top'" class="relative w-full h-[950px] mt-[-200px] xl:mt-[-150px] mb-[-750px] xl:mb-[-800px] z-0">
-    <div
-      class="xl:hidden absolute bottom-[340px] w-full h-[610px] z-0 bg-no-repeat"
-      :style="{'background-image': `url(${first_bottom_mobile});background-size:100%`}"
-    />
-    <div
-      class="xl:hidden absolute bottom-0 w-full h-[918px] z-0 bg-no-repeat"
-      :style="{'background-image': `url(${first_top_mobile});background-size:100%`}"
-    />
-    <div
-      class="hidden xl:block absolute bottom-[340px] w-full h-[610px] z-0 bg-no-repeat bg-cover"
-      :style="{'background-image': `url(${first_bottom})`}"
-    />
-    <div
-      class="hidden xl:block absolute bottom-0 w-full h-[918px] z-0 bg-no-repeat bg-cover"
-      :style="{'background-image': `url(${first_top})`}"
-    />
+  <div v-if="position === 'top'" class="relative w-full h-[950px] mt-[-200px] xl:mt-[-150px] mb-[-750px] xl:mb-[-800px] z-0 overflow-hidden md:overflow-visible">
+    <div class='xl:hidden absolute top-[60px] md:top-0 w-[767px] md:w-full ml-[-321px] md:ml-0 h-max z-0'>
+      <img :src="first_bottom" class="block w-full" />
+    </div>
+    <div class='xl:hidden absolute top-[60px] md:top-0 w-[767px] md:w-full ml-[-321px] md:ml-0 h-max z-0'>
+      <img :src="first_top" class="block w-full" />
+    </div>
+    <div class='hidden xl:block absolute top-0 w-full h-max z-0'>
+      <img :src="first_bottom" class="block w-full" />
+    </div>
+    <div class='hidden xl:block absolute top-0 w-full h-max z-0'>
+      <img :src="first_top" class="block w-full" />
+    </div>
   </div>
-  <div v-if="position === 'bottom'" class="relative w-full h-[960px] xl:h-[433px] mb-[-960px] xl:mb-[-433px] z-0">
-    <div
-      class="xl:hidden absolute top-[71px] w-full h-[610px] z-0 bg-no-repeat"
-      :style="{'background-image': `url(${second_bottom_mobile});background-size:100%`}"
-    />
-    <div
-      class="xl:hidden absolute top-[288px] w-full h-[918px] z-0 bg-no-repeat"
-      :style="{'background-image': `url(${second_top_mobile});background-size:100%`}"
-    />
-    <div
-      class="hidden xl:block absolute top-[71px] w-full h-[610px] z-0 bg-no-repeat bg-cover"
-      :style="{'background-image': `url(${second_bottom})`}"
-    />
-    <div
-      class="hidden xl:block absolute top-[288px] w-full h-[918px] z-0 bg-no-repeat bg-cover"
-      :style="{'background-image': `url(${second_top})`}"
-    />
+  <div v-if="position === 'bottom'" class="relative w-full md:ml-0 h-[960px] xl:h-[433px] mb-[-960px] xl:mb-[-433px] z-0 overflow-hidden md:overflow-visible">
+    <div class='xl:hidden absolute top-[101px] md:top-[21px] w-full h-max z-0'>
+      <img :src="second_bottom_mobile" class="block w-full" />
+    </div>
+    <div class='xl:hidden absolute top-[388px] md:top-[248px] w-[767px] md:w-full ml-[-321px] md:ml-0 h-max z-0'>
+      <img :src="second_top_mobile" class="block w-full" />
+    </div>
+    <div class='hidden xl:block absolute top-[71px] w-full h-max z-0'>
+      <img :src="second_bottom" class="block w-full" />
+    </div>
+    <div class='hidden xl:block absolute top-[288px] w-full h-max z-0'>
+      <img :src="second_top" class="block w-full" />
+    </div>
   </div>
 </template>
 

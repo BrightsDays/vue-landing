@@ -1,7 +1,7 @@
 <template>
-  <h2 class="mb-8 font-bold text-[2.5rem]/[47.4px] md:text-6xl text-white text-center">
+  <h2 class="mb-8 font-bold text-4xl md:text-6xl text-white text-center">
     {{ main }}
-    <span class="bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-transparent">
+    <span class="bg-gradient-to-r from-green to-green_gradient_light bg-clip-text text-transparent">
       {{ green }}
     </span> 
     {{ second }}

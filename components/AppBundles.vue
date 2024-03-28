@@ -1,10 +1,10 @@
 <template>
-  <div class="relative mb-[120px] md:mb-[140px] xl:mb-[160px] xl:mx-[-135px] z-10">
+  <div class="relative mb-[7.5rem] md:mb-[8.75rem] xl:mb-[10rem] xl:mx-[-8.4rem] z-10">
     <UiHeading
       main="Discounted"
       green="Corporate Training"
       second="Bundles"
-      class="md:mb-[70px] xl:mx-auto xl:mb-28 xl:max-w-[750px]"
+      class="md:mb-[4.4rem] xl:mx-auto xl:mb-28 xl:max-w-[46.8rem]"
     />
     <div class="flex flex-col xl:flex-row gap-6 md:px-6 xl:px-0 justify-center">
       <UiBundle

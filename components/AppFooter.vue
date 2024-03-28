@@ -7,13 +7,13 @@
         future of Vue.js by being a Platinum Patreon
       </span>
       <div class="flex flex-col gap-6 flex-shrink w-full items-center xl:items-start">
-        <span class="text-[22px] text-[#737B98] font-medium uppercase">FOLLOW US IN SOCIAL MEDIA</span>
-        <div class="flex justify-between w-full max-w-[470px]">
+        <span class="text-xl text-grey_light font-medium uppercase">FOLLOW US IN SOCIAL MEDIA</span>
+        <div class="flex justify-between w-full max-w-[29.3rem]">
           <a
             v-for="item in socials"
             :key="`social_${item.title}`"
             :href="item.url"
-            class="flex justify-center items-center w-14 h-14 bg-[#2B2F44] rounded-full"
+            class="flex justify-center items-center w-14 h-14 bg-grey_dark rounded-full"
           >
             <img :src="item.icon" :alt="item.title" />
           </a>

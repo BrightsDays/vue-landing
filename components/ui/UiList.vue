@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col items-center md:items-start gap-5 xl:min-w-[270px]">
-    <span class="text-[22px] text-[#737B98] font-medium uppercase">
+  <div class="flex flex-col items-center md:items-start gap-5 xl:min-w-[16.8rem]">
+    <span class="text-xl text-grey_light font-medium uppercase">
       {{ title }}
     </span>
     <div class="flex flex-col gap-3.5 items-center md:items-start">

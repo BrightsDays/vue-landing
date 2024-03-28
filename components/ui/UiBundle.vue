@@ -1,10 +1,10 @@
 <template>
   <UiCard items="start">
-    <div class="flex gap-6 mb-8 xl:min-w-[290px]">
+    <div class="flex gap-6 mb-8 xl:min-w-72">
       <img :src=icon :alt=title />
-      <h3 class="text-[22px] text-white font-bold">{{ title }}</h3>
+      <h3 class="text-xl text-white font-bold">{{ title }}</h3>
     </div>
-    <span class="text-base text-[#0BD88F] font-normal mb-6">Includes 1 year access to:</span>
+    <span class="text-base text-green font-normal mb-6">Includes 1 year access to:</span>
     <div class="flex flex-col gap-4">
       <div
         v-for="item in access"
@@ -18,17 +18,17 @@
     </div>
     <div
       v-if="watchWithDefault"
-      class="flex bg-[#0bd8902e] rounded-[10px] gap-4 px-4 py-6"
+      class="flex bg-green_dark rounded-basic gap-4 px-4 py-6"
     >
       <img :src="video" alt="Video" />
       <div class="flex flex-col gap-0">
-        <span class="text-sm text-[#ffffff70] font-medium">Enough time to watch:</span>
-        <span class="text-[18px] text-white font-medium">The Vue 3 Masterclass</span>
+        <span class="text-sm text-grey font-medium">Enough time to watch:</span>
+        <span class="text-lg text-white font-medium">The Vue 3 Masterclass</span>
       </div>
     </div>
     <UiRange />
     <UiButton>Start Learning</UiButton>
-    <a class="inline-block text-base text-[#0BD88F] font-medium mx-auto" href="/">Refer your manager</a>
+    <a class="inline-block text-base text-green font-medium mx-auto" href="/">Refer your manager</a>
   </UiCard>
 </template>
 

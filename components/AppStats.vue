@@ -1,14 +1,14 @@
 <template>
-  <div class="flex flex-col xl:flex-row mb-[120px] md:mb-[140px] xl:mb-[200px] md:px-[3.75rem] xl:px-0 xl:justify-between">
-    <div class="flex flex-col gap-[13px]">
-      <span class="inline-block bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-base md:text-2xl text-transparent text-center xl:text-left font-medium uppercase">
+  <div class="flex flex-col xl:flex-row mb-[7.5rem] md:mb-[8.75rem] xl:mb-[12.5rem] md:px-14 xl:px-0 xl:justify-between">
+    <div class="flex flex-col gap-3">
+      <span class="inline-block bg-gradient-to-r from-green to-green_gradient_light bg-clip-text text-base md:text-2xl text-transparent text-center xl:text-left font-medium uppercase">
         YOUR #1 SOURCE OF VUE.JS COURSES
       </span>
       <UiHeading
         main="Full Stack"
         green="Vue Training"
         second="Solutions"
-        class="xl:text-left xl:max-w-[570px]"
+        class="xl:text-left xl:max-w-[35.6rem]"
       />
     </div>
     <div class="flex justify-around xl:gap-12">
@@ -18,7 +18,7 @@
         class="flex flex-col items-center"
       >
         <span
-          class="bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-transparent text-[64px]/[75.84px] md:text-8xl md:font-medium"
+          class="bg-gradient-to-r from-green to-green_gradient_light bg-clip-text text-transparent text-6xl md:text-8xl md:font-medium"
         >
           {{ item.value }}
         </span>
