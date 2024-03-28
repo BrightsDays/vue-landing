@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-[120px] md:mb-[140px] xl:mb-[180px]">
+  <div class="relative mb-[120px] md:mb-[140px] xl:mb-[180px] z-10">
     <UiCard>
       <div class="flex flex-col md:flex-row items-center md:items-start xl:items-center gap-6">
         <div class="md:px-5 xl:pl-20 xl:pr-16 md:py-4 xl:py-12">

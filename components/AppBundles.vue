@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-[120px] md:mb-[140px] xl:mb-[160px] xl:mx-[-135px]">
+  <div class="relative mb-[120px] md:mb-[140px] xl:mb-[160px] xl:mx-[-135px] z-10">
     <UiHeading
       main="Discounted"
       green="Corporate Training"
