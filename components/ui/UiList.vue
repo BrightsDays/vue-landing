@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-5 items-center md:items-start">
+  <div class="flex flex-col items-center md:items-start gap-5 xl:min-w-[270px]">
     <span class="text-[22px] text-[#737B98] font-medium uppercase">
       {{ title }}
     </span>

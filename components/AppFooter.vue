@@ -1,12 +1,12 @@
 <template>
-  <div class="flex flex-col gap-12 md:gap-16">
-    <div class="flex flex-col gap-8 items-center">
+  <div class="flex flex-col xl:flex-row w-full xl:justify-between gap-12 md:gap-16">
+    <div class="flex flex-col gap-8 items-center xl:items-start">
       <img :src="logo" alt="Logo" />
-      <span class="text-base text-white text-center">
+      <span class="text-base text-white text-center xl:text-left">
         Thanks to fine people like you, Vue School can proudly sponsor Evan and the 
         future of Vue.js by being a Platinum Patreon
       </span>
-      <div class="flex flex-col gap-6 flex-shrink w-full items-center">
+      <div class="flex flex-col gap-6 flex-shrink w-full items-center xl:items-start">
         <span class="text-[22px] text-[#737B98] font-medium uppercase">FOLLOW US IN SOCIAL MEDIA</span>
         <div class="flex justify-between w-full max-w-[470px]">
           <a
@@ -20,13 +20,31 @@
         </div>
       </div>
     </div>
-    <div class="flex md:grid grid-cols-3 flex-col gap-8">
-      <UiList
-        v-for="item of links"
-        :key="`list_${item.title}`"
-        :title="item.title"
-        :list="item.list"
-      />
+    <div class="flex xl:flex flex-col xl:flex-row gap-8 xl:gap-7">
+      <div class="flex flex-col md:grid xl:flex grid-cols-3 gap-8">
+        <template
+          v-for="item, index of links"
+            :key="`list_${item.title}`"
+        >
+          <UiList
+            v-if="index <= 2"
+            :title="item.title"
+            :list="item.list"
+          />
+        </template>
+      </div>
+      <div class="flex flex-col md:grid xl:flex grid-cols-3 gap-8">
+        <template
+          v-for="item, index of links"
+            :key="`list_${item.title}`"
+        >
+          <UiList
+            v-if="index > 2"
+            :title="item.title"
+            :list="item.list"
+          />
+        </template>
+      </div>
     </div>
   </div>
 </template>

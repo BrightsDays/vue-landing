@@ -18,8 +18,8 @@
     </UiCard>
     <div class="hidden xl:flex justify-between mt-16">
       <a
-        v-for="item, key of partners"
-        :key="`partner_${item.title}_${key}`"
+        v-for="item, index of partners"
+        :key="`partner_${item.title}_${index}`"
         :href="item.url"
         class="px-[1.4rem] py-2.5"
       >
