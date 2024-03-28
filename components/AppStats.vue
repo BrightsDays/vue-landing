@@ -15,7 +15,7 @@
       <div
         v-for="item of stats"
         :key="`stat_${item.title}`"
-        class="flex flex-col items-center"
+        class="flex flex-col items-center whitespace-nowrap"
       >
         <span
           class="bg-gradient-to-r from-green to-green_gradient_light bg-clip-text text-transparent text-6xl md:text-8xl md:font-medium"
