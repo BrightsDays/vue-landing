@@ -1,14 +1,17 @@
 <template>
-  <div class="flex flex-col mb-[120px] md:mb-[140px] md:px-[3.75rem]">
-    <span class="inline-block mb-[13px] bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-base md:text-2xl text-transparent text-center font-medium uppercase">
-      YOUR #1 SOURCE OF VUE.JS COURSES
-    </span>
-    <UiHeading
-      main="Full Stack"
-      green="Vue Training"
-      second="Solutions"
-    />
-    <div class="flex justify-around">
+  <div class="flex flex-col xl:flex-row mb-[120px] md:mb-[140px] xl:mb-[200px] md:px-[3.75rem] xl:px-0">
+    <div class="flex flex-col gap-[13px]">
+      <span class="inline-block bg-gradient-to-r from-[#0BD88F] to-[#00F0FF] bg-clip-text text-base md:text-2xl text-transparent text-center xl:text-left font-medium uppercase">
+        YOUR #1 SOURCE OF VUE.JS COURSES
+      </span>
+      <UiHeading
+        main="Full Stack"
+        green="Vue Training"
+        second="Solutions"
+        class="xl:text-left"
+      />
+    </div>
+    <div class="flex justify-around xl:gap-12">
       <div
         v-for="item of stats"
         :key="`stat_${item.title}`"

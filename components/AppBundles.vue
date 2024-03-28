@@ -1,12 +1,12 @@
 <template>
-  <div class="mb-[120px] md:mb-[140px]">
+  <div class="mb-[120px] md:mb-[140px] xl:mb-[160px] xl:mx-[-135px]">
     <UiHeading
       main="Discounted"
       green="Corporate Training"
       second="Bundles"
-      class="md:mb-[70px]"
+      class="md:mb-[70px] xl:mx-auto xl:mb-28 xl:max-w-[750px]"
     />
-    <div class="flex flex-col gap-6 md:px-6">
+    <div class="flex flex-col xl:flex-row gap-6 md:px-6 xl:px-0 justify-center">
       <UiBundle
         v-for="item, key in bundles"
         :key="`bundle_${item.title}_${key}`"
@@ -77,7 +77,7 @@ const bundles = [
         value: true
       }
     ],
-    watch: false
+    watch: true
   },
   {
     icon: bolt,
