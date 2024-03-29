@@ -19,22 +19,22 @@
 </template>
 
 <script setup lang="ts">
-const sanity = useSanity()
+// const sanity = useSanity()
 
-const query = groq`{ "siteSettings": *[_type == "siteSettings"]{ 
-  title,
-  heading_before,
-  heading_marked,
-  heading_after,
-} }`
-const { data } = await useAsyncData('siteSettings', () => sanity.fetch(query))
+// const query = groq`{ "siteSettings": *[_type == "siteSettings"]{ 
+//   title,
+//   heading_before,
+//   heading_marked,
+//   heading_after,
+// } }`
+// const { data } = await useAsyncData('siteSettings', () => sanity.fetch(query))
 
 useHead({
-  title: data.value['siteSettings'][0].title,
+  title: 'Vue Landing',
   meta: [
     {
       name: 'description',
-      content: `${data.value['siteSettings'][0].heading_before} ${data.value['siteSettings'][0].heading_marked} ${data.value['siteSettings'][0].heading_after}`
+      content: 'Test task'
     }
   ]
 })

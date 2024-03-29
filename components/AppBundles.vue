@@ -25,19 +25,19 @@ import leaf from '../assets/images/bundles/leaf.svg'
 import rocket from '../assets/images/bundles/rocket.svg'
 import bolt from '../assets/images/bundles/bolt.svg'
 
-const sanity = useSanity()
+// const sanity = useSanity()
 
-const query = groq`{ "accesses": *[_type == "accesses"]{ 
-  basic,
-  professional,
-  basic_second
-} }`
+// const query = groq`{ "accesses": *[_type == "accesses"]{ 
+//   basic,
+//   professional,
+//   basic_second
+// } }`
 
-const { data } = await useAsyncData('accesses', () => sanity.fetch(query))
+// const { data } = await useAsyncData('accesses', () => sanity.fetch(query))
 
-const basic = data.value['accesses'][0].basic
-const professional = data.value['accesses'][0].professional
-const basic_second = data.value['accesses'][0].basic_second
+// const basic = data.value['accesses'][0].basic
+// const professional = data.value['accesses'][0].professional
+// const basic_second = data.value['accesses'][0].basic_second
 
 const bundles = [
   {
@@ -65,7 +65,7 @@ const bundles = [
         value: false
       }
     ],
-    access_number: basic,
+    access_number: 3,
     watch: false
   },
   {
@@ -93,7 +93,7 @@ const bundles = [
         value: true
       }
     ],
-    access_number: professional,
+    access_number: 5,
     watch: true
   },
   {
@@ -121,7 +121,7 @@ const bundles = [
         value: false
       }
     ],
-    access_number: basic_second,
+    access_number: 5,
     watch: false
   }
 ]

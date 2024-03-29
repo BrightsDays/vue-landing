@@ -36,34 +36,34 @@ import video from '../assets/images/video.svg'
 import course from '../assets/images/course.svg'
 import time from '../assets/images/time.svg'
 
-const sanity = useSanity()
+// const sanity = useSanity()
 
-const query = groq`{ "stats": *[_type == "stats"]{ 
-  lessons,
-  courses,
-  hours 
-} }`
+// const query = groq`{ "stats": *[_type == "stats"]{ 
+//   lessons,
+//   courses,
+//   hours 
+// } }`
 
-const { data } = await useAsyncData('stats', () => sanity.fetch(query))
+// const { data } = await useAsyncData('stats', () => sanity.fetch(query))
 
-const lessons = data.value['stats'][0].lessons || 0
-const courses = data.value['stats'][0].courses || 0
-const hours = data.value['stats'][0].hours || 0
+// const lessons = data.value['stats'][0].lessons || 0
+// const courses = data.value['stats'][0].courses || 0
+// const hours = data.value['stats'][0].hours || 0
 
 const stats = [
   {
     title: 'Video lessons',
-    value: lessons,
+    value: 10,
     icon: video
   },
   {
     title: 'Courses',
-    value: courses,
+    value: 340,
     icon: course
   },
   {
     title: '15 Hours',
-    value: hours,
+    value: 93,
     icon: time
   },
 ]
