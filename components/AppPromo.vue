@@ -4,9 +4,9 @@
       <h1 class="text-4xl md:text-6xl text-white text-center xl:text-left font-bold">{{ before }} 
         <span class="text-green">{{ marked }}</span> {{ after}}</h1>
       <p class="text-base md:text-xl text-white text-center xl:text-left font-normal">
-        Training solutions designed for companies, agencies and organisations with 
-        developers using or who are considering using the Vue.js framework</p>
-      <UiButton>Talk to Sales</UiButton>
+        {{ content }}
+      </p>
+      <UiButton>{{ action }}</UiButton>
     </div>
     <img :src=learners alt="group of learners" class="md:min-w-[38rem]"/>
   </div>
@@ -16,12 +16,6 @@
 import learners from '../assets/images/learners.svg'
 
 const sanity = useSanity()
-
-const before = ref('')
-const marked = ref('')
-const after = ref('')
-const content = ref('')
-const action = ref('')
 
 const query = groq`{ "siteSettings": *[_type == "siteSettings"]{ 
   heading_before,
@@ -40,9 +34,9 @@ const {
   call_to_action 
 } = data.value['siteSettings'][0]
 
-before.value = heading_before
-marked.value = heading_marked
-after.value = heading_after
-content.value = paragraph
-action.value = call_to_action
+const before = heading_before
+const marked = heading_marked
+const after = heading_after
+const content = paragraph
+const action = call_to_action
 </script>
