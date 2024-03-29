@@ -8,4 +8,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  modules: ['@nuxtjs/sanity'],
+  sanity: {
+    projectId: "l1a01ojd",
+    withCredentials: true
+  },
 })

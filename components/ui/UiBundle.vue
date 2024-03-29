@@ -7,11 +7,11 @@
     <span class="text-base text-green font-normal mb-6">Includes 1 year access to:</span>
     <div class="flex flex-col gap-4">
       <div
-        v-for="item in access"
+        v-for="item, index in access"
         :key="`access_${item.content}`"
-        :class="`${!item.value ? 'opacity-20 ' : ''}flex gap-4`"
+        :class="`${index >= accessNumber ? 'opacity-20 ' : ''}flex gap-4`"
       >
-        <img :src="item.value ? ok : bad" alt="Status" />
+        <img :src="index < accessNumber ? ok : bad" alt="Status" />
         <span class="text-sm text-white">{{ item.content }}</span>
         <img v-if="item.value" :src="info" alt="Info" class="ml-auto" />
       </div>
@@ -42,6 +42,7 @@ const {
   icon,
   title,
   access,
+  accessNumber,
   watch
 } = defineProps<{
   icon: string
@@ -50,6 +51,7 @@ const {
     content: string
     value: boolean
   }[]
+  accessNumber: number
   watch?: boolean
 }>()
 
